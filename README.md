@@ -1,5 +1,11 @@
-# capivara-atomica
+# Capivair
 O projeto é um aplicativo de monitoramento de poluição ambiental desenvolvido por estudantes da Faculdade SENAC/PE no terceiro período. O objetivo do aplicativo é exibir dados advindos de sensores instalados em instalações industriais para tomada de decisões em favor do meio ambiente.
+
+# Problema
+
+# Solução
+
+# Tecnologias utilizadas
 
 # Colaboradores
 <table>
