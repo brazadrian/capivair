@@ -176,7 +176,7 @@
                             data.linhaC4,
                             data.linhaC5,
                             data.linhaC6,
-                            data.linhaC7
+                            data.linhaC7,
                         ],
                         backgroundColor: "rgba(0, 71, 171, .9)", // linha setor c (Multiple line chart)
                         fill: true
@@ -193,35 +193,21 @@
 //-- TELA -> chart.html
 //-- 1° Grafico em Linha
     // Single Line Chart
-    fetchData().then(data => {
-        var ctx3 = $("#line-chart").get(0).getContext("2d");
-        var myChart3 = new Chart(ctx3, {
-            type: "line",
-            data: {
-                labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00"],
-                datasets: [{
-                    label: "Hora",
-                    data: [
-                            data.single_line_chart_SENSOR.noveHoras,
-                            data.single_line_chart_SENSOR.dezHoras,
-                            data.single_line_chart_SENSOR.onzeHoras,
-                            data.single_line_chart_SENSOR.dozeHoras,
-                            data.single_line_chart_SENSOR.trezeHoras,
-                            data.single_line_chart_SENSOR.quatorzeHoras,
-                            data.single_line_chart_SENSOR.quinzeHoras,
-                            data.single_line_chart_SENSOR.dezesseisHoras,
-                            data.single_line_chart_SENSOR.dezesseteHoras,
-                            data.single_line_chart_SENSOR.dezoitoHoras,
-                            data.single_line_chart_SENSOR.dezenoveHoras,
-                        ],
-                    fill: false,
-                    backgroundColor: "rgba(137, 207, 240)" // cor dos pontos (single line chart)
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
+    var ctx3 = $("#line-chart").get(0).getContext("2d");
+    var myChart3 = new Chart(ctx3, {
+        type: "line",
+        data: {
+            labels: ["09:50", "10:50", "11:50", "12:50", "00:50", "01:50", "02:50", "03:50", "04:50", "05:50", "06:50"],
+            datasets: [{
+                label: "Hora",
+                fill: false,
+                backgroundColor: "rgba(137, 207, 240)", // cor dos pontos (single line chart)
+                data: [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]
+            }]
+        },
+        options: {
+            responsive: true
+        }
     });
 
 //-- Há um Grafico nesse momento na tela, que é o Grafico em Linha da index.html

@@ -4,17 +4,15 @@
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Projeto para Cadeira de PI" name="description" />
     <meta name="theme-color" content="#D9D9D9"/>
 
-<!--link para o manifest json-->
-    <link rel="manifest" href="manifest.json">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-    <link href="img/favicon.ico" rel="apple-touch-icon"> <!--icones dos 4 campos-->
+    <link href="img/favicon.ico" rel="icon"><!--acho que pode tirar-->
+    <link href="img/favicon.ico" rel="apple-touch-icon">
     <link href="img/icons/android144x144.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
 
     <!-- Google Web Fonts -->
@@ -38,6 +36,9 @@
 
 <!--pegar dados do arquivo json-->
     <script type="text/javascript" src="dados.json"> </script>
+
+    <!--link para o manifest json-->
+    <link rel="manifest" href="manifest.json">
 </head>
 
 
@@ -70,7 +71,7 @@
                 </div>
 <!--ELEMENTOS-->
                 <div class="navbar-nav w-100">
-                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>HOME</a>
+                    <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Home</a>
 <!--Caminho Page Elements-->
                     <!--
                     <div class="nav-item dropdown">
@@ -84,7 +85,7 @@
                     -->
                     <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a> -->
                     <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a> -->
-                    <a href="#" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="tables.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Monitoramento</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <!--
                     <div class="nav-item dropdown">
@@ -113,13 +114,7 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                
-<!--Input Pesquisa-->
-                <!--
-                <form class="d-none d-md-flex ms-4">
-                    <input class="form-control bg-dark border-0" type="search" placeholder="Search">
-                </form>
-                -->
+
                 <div class="navbar-nav align-items-center ms-auto">
                     
 <!--Icon de Mensagens-->
@@ -277,7 +272,7 @@
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Gráfico Coluna</h6>
-                                <a href="">Show All</a>
+                                <a href="chart.html">Show All</a>
                             </div>
                             <canvas id="worldwide-sales"></canvas>
                         </div>
@@ -286,7 +281,7 @@
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h6 class="mb-0">Gráfico Linha</h6>
-                                <a href="">Show All</a>
+                                <a href="chart.html">Show All</a>
                             </div>
                             <canvas id="salse-revenue"></canvas>
                         </div>
@@ -380,7 +375,7 @@
                             &copy; <a href="#">Capivair</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="https://htmlcodex.com">Capivair</a>
+                            Designed By <a href="">Capivair</a>
                             <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
                         </div>
                     </div>

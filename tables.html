@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Charts</title>
+    <title>Ponto de Monitoramento</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -11,6 +11,7 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
     <link href="img/icons/android144x144.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
+
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +48,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
+                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>CapivAir</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -55,15 +56,14 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">Jhon Doe</h6>
+                        <h6 class="mb-0">David Loo</h6>
                         <span>Admin</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Home</a>
-                    <a href="tables.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Monitoramento</a>
-                    <a href="chart.html" class="nav-item nav-link active"><i class="fa fa-chart-bar me-2"></i>Charts</a>
-                   
+                    <a href="table.html" class="nav-item nav-link active"><i class="fa fa-table me-2"></i>Monitoramento</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                 </div>
             </nav>
         </div>
@@ -71,7 +71,7 @@
 
 
         <!-- Content Start -->
-        <div class="content">
+        <div id="contenttable"class="content">
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
@@ -80,13 +80,14 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-
+                
                 <div class="navbar-nav align-items-center ms-auto">
+                   
 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/40.png" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                            <span class="d-none d-lg-inline-flex">David Loo</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
@@ -99,60 +100,114 @@
             <!-- Navbar End -->
 
 
-            <!-- Chart Start -->
-            <div class="container-fluid pt-4 px-4">
+            <!-- Table Start -->
+            <h5 id="pont">Pontos de Monitoramento</h5>
+            <hr id="linha">
+            <div id="test" class="container-fluid pt-4 px-4">
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Sensor 00101</h6>
-                            <canvas id="line-chart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Sensores area01</h6>
-                            <canvas id="salse-revenue"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Single Bar Chart</h6>
-                            <canvas id="bar-chart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Multiple Bar Chart</h6>
-                            <canvas id="worldwide-sales"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Pie Chart</h6>
-                            <canvas id="pie-chart"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Doughnut Chart</h6>
-                            <canvas id="doughnut-chart"></canvas>
+                        <div  class="bg-secondary rounded h-100 p-4">
+                            <h6 class="mb-4">Setor 3</h6>
+
+                            <div id="set3">
+                                <img id="imgplant" src="https://media.discordapp.net/attachments/1019738196659159183/1093586307499970641/image.png?width=201&height=408" alt="">
+
+                                <form id="plant">
+                                    <label for=""><h6>Id do Ponto</h6></label>
+                                    <br>
+                                    <input type="text" disabled value="003" >
+                                    <br>
+                                    <label for=""><H6>Setor</H6></label>
+                                    <br>
+                                    <input type="text" disabled value="03">
+                                    <br>
+                                    <h6 id="stss">Status do sensor:
+                                    <br>
+                                    <button  id="sensativo">Conectado!</button>
+                                    <br>
+                                       
+                                    <img id="rmv" src="https://cdn-icons-png.flaticon.com/512/7181/7181256.png" alt="Remover">   
+                                    <pre>  <h6>         Remover</h6></pre>
+                                </form>
+                            </div>
+
+                            <div id="waypoint">
+                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093621283922649258/image.png" width="100px" alt="">
+                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622009436577863/image.png" width="100px" alt="">
+                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622240161038346/image.png" width="100px" alt="">
+                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622327855550494/image.png" width="100px" alt="">
+                            </div>
+
+                            <div id="pontos">
+                           
+                                <table class="table table-striped-columns">
+
+                                    <caption></caption>
+                                    <thead>
+                                        <tr>
+                                            <th><h6>Ponto de coleta</h6></th>
+                                            
+                                            <th><h6>Status</h6> </th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  001 Setor 03</pre>
+                                            </td>
+                                            <td>
+                                                Estável
+                                            </td>
+                                            <td>
+                                                <a href="chart.html">Vizualizar dashboard</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                        <tr>
+                                            <td>
+                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  002 Setor 02</pre>
+                                            </td>
+                                            <td>
+                                                Estável
+                                            </td>
+                                            <td>
+                                                <a href="chart.html">Vizualizar dashboard</a>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  003 Setor 01</pre>
+                                            </td>
+                                            <td>
+                                                Estável
+                                            </td>
+                                            <td>
+                                                <a href="chart.html">Vizualizar dashboard</a>
+                                            </td>
+                                        </tr>
+                                </table>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Chart End -->
-
+                    
+                   
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="#">Capivair</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                            Designed By: HTML Codex</a>
                             <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                         </div>
                     </div>

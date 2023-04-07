@@ -1,20 +1,7 @@
 
 {
 
-    "single_line_chart_SENSOR": {
-
-        "noveHoras": 7,
-        "dezHoras": 8,
-        "onzeHoras": 8,
-        "dozeHoras": 9,
-        "trezeHoras": 9,
-        "quatorzeHoras": 9.5,
-        "quinzeHoras": 10,
-        "dezesseisHoras": 11,
-        "dezesseteHoras": 9.8,
-        "dezoitoHoras": 9.4,
-        "dezenoveHoras": 9
-    },
+    
 
     "ARcoluna1" : 15,
     "ARcoluna2" : 20,
