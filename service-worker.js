@@ -9,6 +9,8 @@ self.addEventListener('install', event => {
       .then(cache => cache.addAll([
 
         './index.html',
+        './chart.html',
+        './monitoramento.html',
         './css/style.css',
         './css/bootstrap.min.css',
         './js/main.js',
@@ -17,6 +19,11 @@ self.addEventListener('install', event => {
 
         //'a.html',
 
+        './img/Mapa-Loc/Map-Planta-0.75x.png',
+        './img/Mapa-Loc/pin-loc-blue.png',
+        './img/Mapa-Loc/pin-loc-yellow.png',
+        './img/Mapa-Loc/pin-loc-orange.png',
+        './img/Mapa-Loc/pin-loc-red.png',
 
            
         './img/40.png',
