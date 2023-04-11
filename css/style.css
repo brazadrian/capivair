@@ -288,3 +288,76 @@
     background: var(--dark);
     border-color: var(--primary);
 }
+
+
+/*VETO Start*/
+#pont{
+    text-align: center;
+    padding-top: 10px;
+}
+#linha{
+    color: #ffffff;
+}
+
+
+/*AYRTON Start*/
+.map{
+    width: 102%;
+}
+.set3{
+    display: block;
+    text-align: center;
+    height: 0%;
+    width: 100%;
+    
+}
+
+section{
+    display: flex;
+}
+
+input.btn-edit{
+    margin: 0% 4%;
+    color: #a7a7a7;
+    border-style: none;
+    border-radius: 10px;
+}
+
+div.div-pin-loc{
+    padding-bottom: 2%;
+}
+/*AYRTON End*/
+
+
+#imgplant{
+    padding-left: 15px;
+    
+}
+
+#plant{
+    padding-left: px;
+    color: #05183f ;
+    
+     display:inline  !important;
+}
+
+#sensativo{
+width: 100px;
+height: 30px;
+background-color: rgba(0, 128, 0, 0.597);/*mexi aq*/
+border-radius: 10px;
+border: green;
+color: #ffffff;
+
+}
+
+#rmv{
+width: 40px;
+display: block;
+
+color: #ffffff;
+}
+
+.rmvv{
+    display: block;
+}

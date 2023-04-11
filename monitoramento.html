@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -29,7 +29,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
+    <!-- Template Stylesheet o problema pode estar aqui-->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -100,99 +100,168 @@
             <!-- Navbar End -->
 
 
+
             <!-- Table Start -->
             <h5 id="pont">Pontos de Monitoramento</h5>
             <hr id="linha">
             <div id="test" class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    <div class="col-sm-12 col-xl-6">
-                        <div  class="bg-secondary rounded h-100 p-4">
+
+                   <!--Coluna Imagem-->
+                    <div class="col-sm-12 col-xl-8">
+                        <div  class=" map bg-secondary rounded h-90 p-10"><!--alterei o h era h-100-->
                             <h6 class="mb-4">Setor 3</h6>
 
-                            <div id="set3">
-                                <img id="imgplant" src="https://media.discordapp.net/attachments/1019738196659159183/1093586307499970641/image.png?width=201&height=408" alt="">
-
-                                <form id="plant">
-                                    <label for=""><h6>Id do Ponto</h6></label>
-                                    <br>
-                                    <input type="text" disabled value="003" >
-                                    <br>
-                                    <label for=""><H6>Setor</H6></label>
-                                    <br>
-                                    <input type="text" disabled value="03">
-                                    <br>
-                                    <h6 id="stss">Status do sensor:
-                                    <br>
-                                    <button  id="sensativo">Conectado!</button>
-                                    <br>
-                                       
-                                    <img id="rmv" src="https://cdn-icons-png.flaticon.com/512/7181/7181256.png" alt="Remover">   
-                                    <pre>  <h6>         Remover</h6></pre>
-                                </form>
+                            <div class="set3">
+                                <!--
+                                    <img id="imgplant" src="https://media.discordapp.net/attachments/1019738196659159183/1093586307499970641/image.png?width=201&height=408" alt="">
+                                -->
+                                <img class="map-planta" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="">
                             </div>
 
-                            <div id="waypoint">
-                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093621283922649258/image.png" width="100px" alt="">
-                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622009436577863/image.png" width="100px" alt="">
-                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622240161038346/image.png" width="100px" alt="">
-                                <img src="https://media.discordapp.net/attachments/1019738196659159183/1093622327855550494/image.png" width="100px" alt="">
+                        </div>
+                    </div>
+
+                   <!--Coluna Campos-->
+                    <div class="col-sm-12 col-xl-4">
+                        <div  class=" map bg-secondary rounded h-90 p-4">
+
+                            <div class="container-fluid pt-4 px-0">
+                                <div class="bg-secondary rounded-top p-0">
+                                    
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 text-sm-start">
+                                            <label><h6>Id do Ponto</h6></label>
+                                            <br>
+                                            <section>
+                                                <input type="text" disabled value="0001" class="input-sen">
+                                                <input type="button" class="btn-edit" value="Edit">
+                                            </section>
+                                            <br>
+                                            <label><h6>Setor</h6></label>
+                                            <br>
+                                            <section>
+                                                <input type="text" disabled value="03">
+                                                <input type="button" class="btn-edit" value="Edit">
+                                            </section>
+                                            <br>
+                                            <label><h6>Status Sensor</h6></label>
+                                            <br>
+                                            <section>
+                                                <button id="sensativo">
+                                                    Conectado!
+                                                </button>
+                                            </section>
+                                            <br>
+
+<!--                                        <div class="container-fluid pt-4 px-4">
+                                                <div class="bg-secondary rounded-top p-4">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-6 text-sm-start">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+-->
+<!--Icone Lixeira de Veto-->
+                                            <section class="rmvv">
+                                                <img class="text-sm-end" id="rmv" src="img/lixeira.png" alt="Remover">
+                                                <h6 class="text-sm-start">Remover</h6>
+                                            </section>                                            
+<!--Bagunca Icone Lixeira Bootstrap-->
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
 
-                            <div id="pontos">
-                           
-                                <table class="table table-striped-columns">
+<!-- 
+                            <div class="container-fluid pt-4 px-4">
+                                <div class="bg-secondary rounded-top p-4">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 text-sm-start">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+-->
 
-                                    <caption></caption>
+                        </div>
+                    </div>
+<!--Aqui-->
+                    <div class="col-12">
+                        <div class="bg-secondary rounded h-100 w-100 p-4">
+
+                            <div class="div-pin-loc">
+                                <label>
+                                    <img src="img/Mapa-Loc/pin-loc-blue.png" alt="">
+                                    <th>Estável</th>
+                                </label>
+                                
+                                <label>
+                                    <img src="img/Mapa-Loc/pin-loc-yellow.png" alt="">
+                                    <th>Atenção</th>
+                                </label>
+
+                                <label>
+                                    <img src="img/Mapa-Loc/pin-loc-orange.png" alt="">
+                                    <th>Alerta</th>
+                                </label>
+                                
+                                <label>
+                                    <img src="img/Mapa-Loc/pin-loc-red.png" alt="">
+                                    <th>Urgente</th>
+                                </label>
+                            </div>
+
+                            <h6 class="mb-4">Ponto de Coleta dos Dados</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+
                                     <thead>
                                         <tr>
-                                            <th><h6>Ponto de coleta</h6></th>
-                                            
-                                            <th><h6>Status</h6> </th>
-                                            <th></th>
+                                            <th scope="col">N°</th>
+                                            <th scope="col">Área</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col"></th>
                                         </tr>
                                     </thead>
-                                    
+
                                     <tbody>
                                         <tr>
+                                            <th scope="row">001</th>
+                                            <td>Setor 03</td>
+                                            <td>Estável</td>
                                             <td>
-                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  001 Setor 03</pre>
+                                                <a href="chart.html">Vizualizar dashboard</a>
                                             </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">002</th>
+                                            <td>Setor 07</td>
+                                            <td>Estável</td>
                                             <td>
-                                                Estável
+                                                <a href="chart.html">Vizualizar dashboard</a>
                                             </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">003</th>
+                                            <td>Setor 04</td>
+                                            <td>Estável</td>
                                             <td>
                                                 <a href="chart.html">Vizualizar dashboard</a>
                                             </td>
                                         </tr>
                                     </tbody>
-                                        <tr>
-                                            <td>
-                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  002 Setor 02</pre>
-                                            </td>
-                                            <td>
-                                                Estável
-                                            </td>
-                                            <td>
-                                                <a href="chart.html">Vizualizar dashboard</a>
-                                            </td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>
-                                                <pre> <img src="https://media.discordapp.net/attachments/1019738196659159183/1093628999902699630/image.png" width="30px" alt="">  003 Setor 01</pre>
-                                            </td>
-                                            <td>
-                                                Estável
-                                            </td>
-                                            <td>
-                                                <a href="chart.html">Vizualizar dashboard</a>
-                                            </td>
-                                        </tr>
                                 </table>
                             </div>
 
                         </div>
                     </div>
+
                 </div>
             </div>
                     
@@ -206,9 +275,8 @@
                             &copy; <a href="#">Capivair</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By: HTML Codex</a>
-                            <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                            Designed By <a href="">Capivair</a>
+                            <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +309,7 @@
     <script>
         let newWorker;
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', {scope:'/'}).then(reg => {
+            navigator.serviceWorker.register('/service-worker.js').then(reg => {
                 reg.addEventListener('updatefound', () => {
                     // A wild service worker has appeared in reg.installing!
                     newWorker = reg.installing;
