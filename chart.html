@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link href="img/icons/android144x144.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
+    <link href="img/logo_capivara2.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +34,7 @@
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
+
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -62,7 +63,7 @@
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Home</a>
                     <a href="monitoramento.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Monitoramento</a>
-                    <a href="chart.html" class="nav-item nav-link active"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="#" class="nav-item nav-link active"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                    
                 </div>
             </nav>
@@ -104,31 +105,31 @@
                 <div class="row g-4">
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Sensor 00101</h6>
+                            <h6 class="mb-4">Emissão Diária</h6>
                             <canvas id="line-chart"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Sensores area01</h6>
+                            <h6 class="mb-4">Média de Emissão</h6>
                             <canvas id="salse-revenue"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Single Bar Chart</h6>
+                            <h6 class="mb-4">Sensores</h6>
                             <canvas id="bar-chart"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Multiple Bar Chart</h6>
+                            <h6 class="mb-4">Total de Emissão</h6>
                             <canvas id="worldwide-sales"></canvas>
                         </div>
                     </div>
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Pie Chart</h6>
+                            <h6 class="mb-4">Poluentes</h6>
                             <canvas id="pie-chart"></canvas>
                         </div>
                     </div>
@@ -148,17 +149,17 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Your Site Name</a>, All Right Reserved. 
+                            &copy; <a href="#">Capivair</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                            Designed By <a href="">Capivair</a>
+                            <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer End -->
+            
         </div>
         <!-- Content End -->
 
@@ -186,7 +187,7 @@
     <script>
         let newWorker;
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', {scope:'/'}).then(reg => {
+            navigator.serviceWorker.register('/service-worker.js').then(reg => {
                 reg.addEventListener('updatefound', () => {
                     // A wild service worker has appeared in reg.installing!
                     newWorker = reg.installing;

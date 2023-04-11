@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-    <link href="img/icons/android144x144.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
+    <link href="img/logo_capivara2.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
 
 
     <!-- Google Web Fonts -->
@@ -29,12 +29,13 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet o problema pode estar aqui-->
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid position-relative d-flex p-0">
+
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -83,7 +84,6 @@
                 
                 <div class="navbar-nav align-items-center ms-auto">
                    
-
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/40.png" alt="" style="width: 40px; height: 40px;">
@@ -95,10 +95,10 @@
                             <a href="#" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
+
                 </div>
             </nav>
             <!-- Navbar End -->
-
 
 
             <!-- Table Start -->
@@ -109,13 +109,10 @@
 
                    <!--Coluna Imagem-->
                     <div class="col-sm-12 col-xl-8">
-                        <div  class=" map bg-secondary rounded h-90 p-10"><!--alterei o h era h-100-->
+                        <div  class=" map bg-secondary rounded h-90 p-4"><!--alterado o h era h-100-->
                             <h6 class="mb-4">Setor 3</h6>
 
                             <div class="set3">
-                                <!--
-                                    <img id="imgplant" src="https://media.discordapp.net/attachments/1019738196659159183/1093586307499970641/image.png?width=201&height=408" alt="">
-                                -->
                                 <img class="map-planta" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="">
                             </div>
 
@@ -131,6 +128,7 @@
                                     
                                     <div class="row">
                                         <div class="col-12 col-sm-6 text-sm-start">
+                                            
                                             <label><h6>Id do Ponto</h6></label>
                                             <br>
                                             <section>
@@ -153,42 +151,36 @@
                                                 </button>
                                             </section>
                                             <br>
+                        
+<!--Icone Lixeira-->
+                                            <section class="rmvv pt-4">
+                                                <img class="text-sm-start" id="rmv" src="img/lixeira.png" alt="Remover">
+                                                <h6 class="text-sm-start pt-2">Remover</h6>
+                                            </section>
 
-<!--                                        <div class="container-fluid pt-4 px-4">
-                                                <div class="bg-secondary rounded-top p-4">
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-6 text-sm-start">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
--->
-<!--Icone Lixeira de Veto-->
-                                            <section class="rmvv">
-                                                <img class="text-sm-end" id="rmv" src="img/lixeira.png" alt="Remover">
-                                                <h6 class="text-sm-start">Remover</h6>
-                                            </section>                                            
-<!--Bagunca Icone Lixeira Bootstrap-->
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
 
-<!-- 
-                            <div class="container-fluid pt-4 px-4">
+<!--
+                             <div class="container-fluid pt-4 px-4">
                                 <div class="bg-secondary rounded-top p-4">
                                     <div class="row">
                                         <div class="col-12 col-sm-6 text-sm-start">
+                                            
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
--->
+ -->
 
                         </div>
                     </div>
-<!--Aqui-->
+
+<!--Icones Pontos-->
                     <div class="col-12">
                         <div class="bg-secondary rounded h-100 w-100 p-4">
 
@@ -214,6 +206,7 @@
                                 </label>
                             </div>
 
+<!--Registro dos Setores-->
                             <h6 class="mb-4">Ponto de Coleta dos Dados</h6>
                             <div class="table-responsive">
                                 <table class="table">
