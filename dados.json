@@ -1,0 +1,87 @@
+
+{
+    "graficoColuna": {
+        "AR": {
+            "coluna1": 15,
+            "coluna2": 20,
+            "coluna3": 25,
+            "coluna4": 27,
+            "coluna5": 30,
+            "coluna6": 35,
+            "coluna7": 40
+        },
+        "AGUA": {
+            "coluna1": 25,
+            "coluna2": 30,
+            "coluna3": 35,
+            "coluna4": 37,
+            "coluna5": 40,
+            "coluna6": 45,
+            "coluna7": 50
+        },
+        "SOLO": {
+            "coluna1": 35,
+            "coluna2": 40,
+            "coluna3": 45,
+            "coluna4": 47,
+            "coluna5": 50,
+            "coluna6": 55,
+            "coluna7": 58
+        }
+    },
+
+
+    "graficoLinha": {
+        "Setor_A": {
+            "linha1" : 15,
+            "linha2" : 30,
+            "linha3" : 55,
+            "linha4" : 45,
+            "linha5" : 70,
+            "linha6" : 65,
+            "linha7" : 85
+        },
+        "Setor_B": {
+            "linha1" : 99,
+            "linha2" : 135,
+            "linha3" : 170,
+            "linha4" : 130,
+            "linha5" : 190,
+            "linha6" : 180,
+            "linha7" : 270
+        },
+        "Setor_C": {
+            "linha1" : 150,
+            "linha2" : 200,
+            "linha3" : 250,
+            "linha4" : 300,
+            "linha5" : 240,
+            "linha6" : 230,
+            "linha7" : 280
+        }
+    },
+    
+
+    "graficoProducaoPorHoras": {
+
+        "noveHoras": 7,
+        "dezHoras": 8,
+        "onzeHoras": 8,
+        "dozeHoras": 9,
+        "trezeHoras": 10,
+        "quatorzeHoras": 10.4,
+        "quinzeHoras": 11.5,
+        "dezesseisHoras": 12,
+        "dezesseteHoras": 10.7,
+        "dezoitoHoras": 9.4,
+        "dezenoveHoras": 9
+    },
+
+
+
+    "totalEmissoe" : 5000,
+    "emissaoDiaria" : 130,
+    "mediaEmissao": 160,
+    "todosPoluentes": 6
+
+}

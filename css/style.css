@@ -351,13 +351,14 @@ color: #ffffff;
 
 }
 
-#rmv{
-width: 40px;
+img#rmv{
+width: 25px;
 display: block;
-
 color: #ffffff;
 }
 
-.rmvv{
+section.rmvv{
     display: block;
+    width: 10%;
+    height: 80%;
 }
