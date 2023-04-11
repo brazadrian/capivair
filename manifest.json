@@ -1,236 +1,211 @@
 {
-
-    "name": "CapivAir",
-    "short_name": "CapivAir",
+    "name": "Capivair",
+    "short_name": "Capivair",
     "screenshots": [],
     "icons": [
         {
-            "src": "/img/icons/16.png",
+            "src": "/img/AppIcons/16.png",
             "sizes":"16x16",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/20.png",
+            "src":"/img/AppIcons/20.png",
             "sizes":"20x20",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/29.png",
+            "src":"/img/AppIcons/29.png",
             "sizes":"29x29",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/32.png",
+            "src":"/img/AppIcons/32.png",
             "sizes":"32x32",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/40.png",
+            "src":"/img/AppIcons/40.png",
             "sizes":"40x40",
             "type":"image/png"
         },
 
         {
-            "src": "/img/icons/48.png",
+            "src": "/img/AppIcons/48.png",
             "sizes":"48x48",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/50.png",
+            "src":"/img/AppIcons/50.png",
             "sizes":"50x50",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/55.png",
+            "src":"/img/AppIcons/55.png",
             "sizes":"55x55",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/57.png",
+            "src":"/img/AppIcons/57.png",
             "sizes":"57x57",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/58.png",
+            "src":"/img/AppIcons/58.png",
             "sizes":"58x58",
             "type":"image/png"
         },
 
         {
-            "src": "/img/icons/60.png",
+            "src": "/img/AppIcons/60.png",
             "sizes":"60x60",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/64.png",
+            "src":"/img/AppIcons/64.png",
             "sizes":"64x64",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/66.png",
+            "src":"/img/AppIcons/66.png",
             "sizes":"66x66",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/72.png",
+            "src":"/img/AppIcons/72.png",
             "sizes":"72x72",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/76.png",
+            "src":"/img/AppIcons/76.png",
             "sizes":"76x76",
             "type":"image/png"
         },
 
         {
-            "src": "/img/icons/80.png",
+            "src": "/img/AppIcons/80.png",
             "sizes":"80x80",
             "type": "image/png"
         },
         
         {
-            "src":"/img/icons/87.png",
+            "src":"/img/AppIcons/87.png",
             "sizes":"87x87",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/88.png",
+            "src":"/img/AppIcons/88.png",
             "sizes":"88x88",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/92.png",
+            "src":"/img/AppIcons/92.png",
             "sizes":"92x92",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/100.png",
+            "src":"/img/AppIcons/100.png",
             "sizes":"100x100",
             "type":"image/png"
         },
 
         {
-            "src": "/img/icons/102.png",
+            "src": "/img/AppIcons/102.png",
             "sizes":"102x102",
             "type": "image/png"
         },
 
         {
-            "src":"/img/icons/114.png",
+            "src":"/img/AppIcons/114.png",
             "sizes":"114x114",
             "type": "image/png"
         },
 
-        
         {
-            "src":"/img/icons/128.png",
+            "src":"/img/AppIcons/128.png",
             "sizes":"128x128",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/144.png",
+            "src":"/img/AppIcons/144.png",
             "sizes":"144x144",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/152.png",
+            "src":"/img/AppIcons/152.png",
             "sizes":"152x152",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/167.png",
+            "src":"/img/AppIcons/167.png",
             "sizes":"167x167",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/172.png",
+            "src":"/img/AppIcons/172.png",
             "sizes":"172x172",
             "type":"image/png"
         },
         
         {
-            "src":"/img/icons/180.png",
+            "src":"/img/AppIcons/180.png",
             "sizes":"180x180",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/196.png",
+            "src":"/img/AppIcons/196.png",
             "sizes":"192x192",
-            "type":"image/png"
+            "type":"image/png",
+            "purpose": "any maskable"
         },
 
         {
-            "src":"/img/icons/216.png",
+            "src":"/img/AppIcons/216.png",
             "sizes":"216x216",
             "type":"image/png"
         },
         
         {
-            "src":"/img/icons/256.png",
+            "src":"/img/AppIcons/256.png",
             "sizes":"256x256",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/512.png",
+            "src":"/img/AppIcons/512.png",
             "sizes":"512x512",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/1024.png",
+            "src":"/img/AppIcons/1024.png",
             "sizes":"1024x1024",
             "type":"image/png"
         },
 
         {
-            "src":"/img/icons/android48x48.png",
+            "src":"/img/logo.png",
             "sizes":"48x48",
             "type":"image/png"
-        },
-        
-        {
-            "src":"/img/icons/android72x72.png",
-            "sizes":"72x72",
-            "type":"image/png"
-        },
-
-        {
-            "src":"/img/icons/android96x96.png",
-            "sizes":"96x96",
-            "type":"image/png"
-        },
-
-        {
-            "src":"/img/icons/android144x144.png",
-            "sizes":"144x144",
-            "type":"image/png"
-        },
-        {
-            "src":"/img/icons/android192x192.png",
-            "sizes":"192x192",
-            "type":"image/png",
-            "purpose": "any maskable"
         }
     ],
 
@@ -238,7 +213,7 @@
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "description": "Plataforma para dmonitoramento de fluxo de poluente em CO2",
+    "description": "Plataforma para Monitoramento de Poluentes",
     "scope": "/",
     "lang": "pt-br",
     "orientation": "portrait",
@@ -246,5 +221,5 @@
     "categories": [
         "personalization"
     ]
-  }
+}
   
