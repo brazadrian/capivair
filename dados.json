@@ -1,4 +1,3 @@
-
 {
     "graficoColuna": {
         "AR": {
@@ -29,8 +28,6 @@
             "coluna7": 58
         }
     },
-
-
     "graficoLinha": {
         "Setor_A": {
             "linha1" : 15,
@@ -60,10 +57,7 @@
             "linha7" : 280
         }
     },
-    
-
     "graficoProducaoPorHoras": {
-
         "noveHoras": 7,
         "dezHoras": 8,
         "onzeHoras": 8,
@@ -77,11 +71,8 @@
         "dezenoveHoras": 9
     },
 
-
-
-    "totalEmissoe" : 5000,
-    "emissaoDiaria" : 130,
+    "totalEmissoe": 5000,
+    "emissaoDiaria": 130,
     "mediaEmissao": 160,
     "todosPoluentes": 6
-
 }

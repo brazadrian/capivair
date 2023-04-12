@@ -84,7 +84,7 @@
                 labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
                 datasets: [
                     {
-                        label: "AR",
+                        label: "CO₂",
                         data: [
                             data.graficoColuna.AR.coluna1,
                             data.graficoColuna.AR.coluna2,
@@ -97,7 +97,7 @@
                         backgroundColor: "#89CFF0" // primeira barra do grafico (multiple bar chart)
                     },
                     {
-                        label: "ÁGUA",
+                        label: "O₃",
                         data: [
                             data.graficoColuna.AGUA.coluna1,
                             data.graficoColuna.AGUA.coluna2,
@@ -110,7 +110,7 @@
                         backgroundColor: "#0096FF" //segunda barra do grafico (multiple bar chart)
                     },
                     {
-                        label: "SOLO",
+                        label: "NO₂",
                         data: [
                             data.graficoColuna.SOLO.coluna1,
                             data.graficoColuna.SOLO.coluna2,
@@ -194,7 +194,7 @@
 //-- 1° Grafico em Linha
     // Single Line Chart -> Emissao Diaria
     fetchData().then(data => {
-        var ctx3 = $("#line-chart").get(0).getContext("2d");
+        var ctx3 = $("#line-chart").get(0)/* .getContext("2d") */;
         var myChart3 = new Chart(ctx3, {
             type: "line",
             data: {
