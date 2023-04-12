@@ -13,7 +13,7 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon"><!--acho que pode tirar-->
     <link href="img/favicon.ico" rel="apple-touch-icon">
-    <link href="img/logo_capivara2.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
+    <link href="img/logo.png" rel="shortcut icon" type="image/x-icon"/> <!--add uma img na guia-->
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +57,7 @@
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
+                    <h3 class="text-primary">Capivair</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
@@ -73,7 +73,7 @@
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Home</a>
                     <a href="monitoramento.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Monitoramento</a>
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Gráficos</a>
                 </div>
             </nav>
         </div>
@@ -85,7 +85,7 @@
             <!-- Navbar Start -->
             <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
                 <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><i class="fa fa-user-edit"></i></h2>
+                    <h2 class="text-primary mb-0"><!-- <i class="fa fa-user-edit"></i> --></h2>
                 </a>
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
@@ -94,15 +94,11 @@
                 <div class="navbar-nav align-items-center ms-auto">
  
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <p class="nav-link " data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="img/40.png" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">David Loo</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
-                            <a href="#" class="dropdown-item">Log Out</a>
-                        </div>
+                            <!-- <span class="d-none d-lg-inline-flex">David Loo</span> -->
+                        </p>
+                        
                     </div>
                 </div>
             </nav>
@@ -116,7 +112,7 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-bar fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Total de Emissões</p>
+                                <p class="mb-2">Diária</p>
                                 <h6 class="mb-0" id="total-emissoes"></h6>
 <!--TOTAL SALE-->
                                 <script>
@@ -129,29 +125,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
-                            <i class="fa fa-chart-line fa-3x text-primary"></i>
-                            <div class="ms-3">
-                                <p class="mb-2">Emissão Diária</p>
-                                <h6 class="mb-0" id="emissao-diaria"></h6>
-<!--TODAY SALE-->
-                                <script>
-                                    fetch("dados.json")
-                                        .then(response => response.json())
-                                        .then(data => {
-                                            document.querySelector("#emissao-diaria").innerHTML = " " + data.emissaoDiaria +" ppb"
-                                        })
-                                </script>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-area fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Média de Emissão</p>
+                                <p class="mb-2">Semanal</p>
                                 <h6 class="mb-0" id="media-emissao"></h6>
 
                                 <script>
@@ -165,18 +144,38 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-chart-line fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Mensal</p>
+                                <h6 class="mb-0" id="emissao-diaria"></h6>
+<!--TODAY SALE-->
+                                <script>
+                                    fetch("dados.json")
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            document.querySelector("#emissao-diaria").innerHTML = " " + data.emissaoDiaria +" ppb"
+                                        })
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="col-sm-6 col-xl-3">
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Todos os Poluentes</p>
+                                <p class="mb-2">Anual</p>
                                 <h6 class="mb-0" id="todos-poluentes"></h6>
 
                                 <script>
                                     fetch("dados.json")
                                         .then(response => response.json())
                                         .then(data => {
-                                            document.querySelector("#todos-poluentes").innerHTML = " " + data.todosPoluentes +" ppb"
+                                            document.querySelector("#todos-poluentes").innerHTML = " " + data.todosPoluentes +" ppm"
                                         })
                                 </script>
 
@@ -194,7 +193,7 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Total Emissão</h6>
+                                <h6 class="mb-0">Emissão Total</h6>
                                 <a href="chart.html">Show All</a>
                             </div>
                             <canvas id="worldwide-sales"></canvas>
@@ -203,7 +202,7 @@
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary text-center rounded p-4">
                             <div class="d-flex align-items-center justify-content-between mb-4">
-                                <h6 class="mb-0">Média de Emissão</h6>
+                                <h6 class="mb-0">Emissão Semanal</h6>
                                 <a href="chart.html">Show All</a>
                             </div>
                             <canvas id="salse-revenue"></canvas>
@@ -222,8 +221,11 @@
                             &copy; <a href="#">Capivair</a>, All Right Reserved. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="">Capivair</a>
-                            <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
+                            Designed By <a href="#">Capivair</a>
+                            <br>
+                            Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
+                            <br>
+                            <i>site</i> <a href="https://themewagon.com/themes/free-bootstrap-5-admin-dashboard-template-darkpan/" target="_blank">Capivair</a>
                         </div>
                     </div>
                 </div>
