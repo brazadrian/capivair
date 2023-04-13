@@ -76,7 +76,7 @@
     }
 
     fetchData().then(data => {
-        // Worldwide Sales Chart -> Total de Emissao
+        // Worldwide Sales Chart -> Emissao Total
         var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
         var myChart1 = new Chart(ctx1, {
             type: "bar",
@@ -133,7 +133,7 @@
 //-- TELA -> index.html
 //-- GRAFICO LINHA #salve-chart
     fetchData().then(data => {
-        // Salse & Revenue Chart -> Media de Emissao
+        // Salse & Revenue Chart -> Emissao Semanal
         var ctx2 = $("#salse-revenue").get(0).getContext("2d");
         var myChart2 = new Chart(ctx2, {
             type: "line",

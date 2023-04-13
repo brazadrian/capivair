@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream
     "emissao_total": {
+=======
+    "emissao_total":{
+>>>>>>> Stashed changes
         "CO": {
             "coluna1": 15,
             "coluna2": 20,
@@ -71,8 +75,15 @@
         "dezenoveHoras": 9
     },
 
+<<<<<<< Updated upstream
     "totalEmissoe": 5000,
     "emissaoDiaria": 130,
     "mediaEmissao": 160,
     "todosPoluentes": 6
+=======
+    "totalEmissoe": 6,
+    "emissaoDiaria": 160,
+    "mediaEmissao": 130,
+    "todosPoluentes": 5000
+>>>>>>> Stashed changes
 }
