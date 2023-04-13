@@ -324,3 +324,14 @@
 
 
 })(jQuery);
+
+var warning = true;
+window.onbeforeunload = function() { 
+  if (warning) {
+    return "You have made changes on this page that you have not yet confirmed. If you navigate away from this page you will lose your unsaved changes";
+  }
+}
+
+$('form').submit(function() {
+   window.onbeforeunload = null;
+});
