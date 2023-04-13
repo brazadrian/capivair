@@ -86,39 +86,39 @@
                     {
                         label: "CO₂",
                         data: [
-                            data.graficoColuna.AR.coluna1,
-                            data.graficoColuna.AR.coluna2,
-                            data.graficoColuna.AR.coluna3,
-                            data.graficoColuna.AR.coluna4,
-                            data.graficoColuna.AR.coluna5,
-                            data.graficoColuna.AR.coluna6,
-                            data.graficoColuna.AR.coluna7
+                            data.emissao_total.CO.coluna1,
+                            data.emissao_total.CO.coluna2,
+                            data.emissao_total.CO.coluna3,
+                            data.emissao_total.CO.coluna4,
+                            data.emissao_total.CO.coluna5,
+                            data.emissao_total.CO.coluna6,
+                            data.emissao_total.CO.coluna7
                         ],
                         backgroundColor: "#89CFF0" // primeira barra do grafico (multiple bar chart)
                     },
                     {
                         label: "O₃",
                         data: [
-                            data.graficoColuna.AGUA.coluna1,
-                            data.graficoColuna.AGUA.coluna2,
-                            data.graficoColuna.AGUA.coluna3,
-                            data.graficoColuna.AGUA.coluna4,
-                            data.graficoColuna.AGUA.coluna5,
-                            data.graficoColuna.AGUA.coluna6,
-                            data.graficoColuna.AGUA.coluna7
+                            data.emissao_total.O.coluna1,
+                            data.emissao_total.O.coluna2,
+                            data.emissao_total.O.coluna3,
+                            data.emissao_total.O.coluna4,
+                            data.emissao_total.O.coluna5,
+                            data.emissao_total.O.coluna6,
+                            data.emissao_total.O.coluna7
                         ],
                         backgroundColor: "#0096FF" //segunda barra do grafico (multiple bar chart)
                     },
                     {
                         label: "NO₂",
                         data: [
-                            data.graficoColuna.SOLO.coluna1,
-                            data.graficoColuna.SOLO.coluna2,
-                            data.graficoColuna.SOLO.coluna3,
-                            data.graficoColuna.SOLO.coluna4,
-                            data.graficoColuna.SOLO.coluna5,
-                            data.graficoColuna.SOLO.coluna6,
-                            data.graficoColuna.SOLO.coluna7
+                            data.emissao_total.NO.coluna1,
+                            data.emissao_total.NO.coluna2,
+                            data.emissao_total.NO.coluna3,
+                            data.emissao_total.NO.coluna4,
+                            data.emissao_total.NO.coluna5,
+                            data.emissao_total.NO.coluna6,
+                            data.emissao_total.NO.coluna7
                         ],
                         backgroundColor: "#0047AB" //terceira barra do grafico (multiple bar chart)
                     }
@@ -142,13 +142,13 @@
                 datasets: [{
                         label: "Setor A",
                         data: [
-                            data.graficoLinha.Setor_A.linha1,
-                            data.graficoLinha.Setor_A.linha2,
-                            data.graficoLinha.Setor_A.linha3,
-                            data.graficoLinha.Setor_A.linha4,
-                            data.graficoLinha.Setor_A.linha5,
-                            data.graficoLinha.Setor_A.linha6,
-                            data.graficoLinha.Setor_A.linha7
+                            data.emissao_semanal.Setor_A.linha1,
+                            data.emissao_semanal.Setor_A.linha2,
+                            data.emissao_semanal.Setor_A.linha3,
+                            data.emissao_semanal.Setor_A.linha4,
+                            data.emissao_semanal.Setor_A.linha5,
+                            data.emissao_semanal.Setor_A.linha6,
+                            data.emissao_semanal.Setor_A.linha7
                         ],
                         backgroundColor: "rgba(137, 207, 240, .5)", // linha setor a (Multiple line chart)
                         fill: true
@@ -156,13 +156,13 @@
                     {
                         label: "Setor B",
                         data: [
-                            data.graficoLinha.Setor_B.linha1,
-                            data.graficoLinha.Setor_B.linha2,
-                            data.graficoLinha.Setor_B.linha3,
-                            data.graficoLinha.Setor_B.linha4,
-                            data.graficoLinha.Setor_B.linha5,
-                            data.graficoLinha.Setor_B.linha6,
-                            data.graficoLinha.Setor_B.linha7
+                            data.emissao_semanal.Setor_B.linha1,
+                            data.emissao_semanal.Setor_B.linha2,
+                            data.emissao_semanal.Setor_B.linha3,
+                            data.emissao_semanal.Setor_B.linha4,
+                            data.emissao_semanal.Setor_B.linha5,
+                            data.emissao_semanal.Setor_B.linha6,
+                            data.emissao_semanal.Setor_B.linha7
                         ],
                         backgroundColor: "rgba(0, 150, 255, .5)", // linha setor b (Multiple line chart)
                         fill: true
@@ -170,13 +170,13 @@
                     {
                         label: "Setor C",
                         data: [
-                            data.graficoLinha.Setor_C.linha1,
-                            data.graficoLinha.Setor_C.linha2,
-                            data.graficoLinha.Setor_C.linha3,
-                            data.graficoLinha.Setor_C.linha4,
-                            data.graficoLinha.Setor_C.linha5,
-                            data.graficoLinha.Setor_C.linha6,
-                            data.graficoLinha.Setor_C.linha7
+                            data.emissao_semanal.Setor_C.linha1,
+                            data.emissao_semanal.Setor_C.linha2,
+                            data.emissao_semanal.Setor_C.linha3,
+                            data.emissao_semanal.Setor_C.linha4,
+                            data.emissao_semanal.Setor_C.linha5,
+                            data.emissao_semanal.Setor_C.linha6,
+                            data.emissao_semanal.Setor_C.linha7
                         ],
                         backgroundColor: "rgba(0, 71, 171, .9)", // linha setor c (Multiple line chart)
                         fill: true

@@ -1,6 +1,6 @@
 {
-    "graficoColuna": {
-        "AR": {
+    "emissao_total": {
+        "CO": {
             "coluna1": 15,
             "coluna2": 20,
             "coluna3": 25,
@@ -9,7 +9,7 @@
             "coluna6": 35,
             "coluna7": 40
         },
-        "AGUA": {
+        "O": {
             "coluna1": 25,
             "coluna2": 30,
             "coluna3": 35,
@@ -18,7 +18,7 @@
             "coluna6": 45,
             "coluna7": 50
         },
-        "SOLO": {
+        "NO": {
             "coluna1": 35,
             "coluna2": 40,
             "coluna3": 45,
@@ -28,7 +28,7 @@
             "coluna7": 58
         }
     },
-    "graficoLinha": {
+    "emissao_semanal": {
         "Setor_A": {
             "linha1" : 15,
             "linha2" : 30,
