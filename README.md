@@ -6,6 +6,11 @@ O projeto é um aplicativo de monitoramento de poluição ambiental desenvolvido
 # Solução
 
 # Tecnologias utilizadas
+- GitHub
+- Notion
+- ClickUp
+- VS Code
+- Miro
 
 # Colaboradores
 <table>
