@@ -145,7 +145,7 @@
                                     fetch("dados.json")
                                         .then(response => response.json())
                                         .then(data => {
-                                            document.querySelector("#total-emissoes").innerHTML = " " + data.totalEmissoe + " ppm"
+                                            document.querySelector("#total-emissoes").innerHTML = " " + data.poluicao_diaria + " ppm"
                                         })
                                 </script>
                             </div>
@@ -165,7 +165,7 @@
                                     fetch("dados.json")
                                         .then(response => response.json())
                                         .then(data => {
-                                            document.querySelector("#media-emissao").innerHTML = " " + data.mediaEmissao + " ppb"
+                                            document.querySelector("#media-emissao").innerHTML = " " + data.poluicao_semanal + " ppb"
                                         })
                                 </script>
 
@@ -186,7 +186,7 @@
                                     fetch("dados.json")
                                         .then(response => response.json())
                                         .then(data => {
-                                            document.querySelector("#emissao-diaria").innerHTML = " " + data.emissaoDiaria + " ppb"
+                                            document.querySelector("#emissao-diaria").innerHTML = " " + data.poluicao_mensal + " ppb"
                                         })
                                 </script>
                             </div>
@@ -199,14 +199,14 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fa fa-chart-pie fa-3x text-primary"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Anual</p>
+                                <p class="mb-2">Total</p>
                                 <h6 class="mb-0" id="todos-poluentes"></h6>
 
                                 <script>
                                     fetch("dados.json")
                                         .then(response => response.json())
                                         .then(data => {
-                                            document.querySelector("#todos-poluentes").innerHTML = " " + data.todosPoluentes + " ppb"
+                                            document.querySelector("#todos-poluentes").innerHTML = " " + data.poluicao_total + " ppb"
                                         })
                                 </script>
 
