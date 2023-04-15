@@ -194,7 +194,7 @@
 //-- 1° Grafico em Linha
     // Single Line Chart -> Emissao Diaria
     fetchData().then(data => {
-        var ctx3 = $("#line-chart").get(0)/* .getContext("2d") */;
+        var ctx3 = $("#line-chart").get(0).getContext("2d");
         var myChart3 = new Chart(ctx3, {
             type: "line",
             data: {
@@ -302,16 +302,23 @@
     var myChart6 = new Chart(ctx6, {
         type: "doughnut",
         data: {
-            labels: ["Italy", "France", "Spain", "USA", "Argentina"],
+            labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(0, 71, 171, .9)", // cor das fatias (doughnut chart)
-                    "rgba(0, 150, 255, .9)",
-                    "rgba(0, 150, 255, .5)",
-                    "rgba(137, 207, 240, .9)",
-                    "rgba(137, 207, 240, .4)"
+                    "rgba(0, 10, 150, .9)", // cor das fatias (doughnut chart)
+                    "rgba(0, 30, 150, .9)",
+                    "rgba(0, 50, 150, .9)",
+                    "rgba(0, 70, 150, .9)",
+                    "rgba(0, 70, 170, .9)",
+                    "rgba(0, 70, 200, .9)",
+                    "rgba(0, 60, 200, .9)",
+                    "rgba(0, 40, 230, .9)",
+                    "rgba(0, 90, 255, .9)",
+                    "rgba(0, 110, 255, .9)",
+                    "rgba(0, 130, 255, .9)",
+                    "rgba(0, 150, 255, .9)"
                 ],
-                data: [55, 49, 44, 24, 15]
+                data: [55, 49, 44, 24, 15,15,24,34,56,12,65,29]
             }]
         },
         options: {
