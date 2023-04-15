@@ -52,8 +52,8 @@
 
         .map-icon-yellow {
             position: absolute;
-            top: 265px;
-            left: 50%;
+            top: 440px;
+            left: 46%;
             width: 25px;
             height: 25px;
             background-image: url("img/Mapa-Loc/pin-loc-yellow.png");
@@ -145,16 +145,16 @@
                    <div class="col-sm-12 col-xl-8">
                     <!--Campo da Imagem Start-->
                     <div class="map bg-secondary rounded h-90 p-4">
-                        <h6 class="mb-4">Setor 3</h6>
+                        <h6 class="mb-4">Planta baixa do 2º pavimento</h6>
                 
                         <!--Imagem Start-->
                         <div class="set3">
                             
                             <div class="map-container">
-                                <img id="map-image" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap" width="204">
+                                <img id="map-image" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="Planta baixa do 3º setor da empresa" usemap="#workmap" width="204">
                                 <map name="workmap">
-                                    <area class="map-icon-orange" shape="circle" coords="10,48,2" alt="loc orange">
-                                    <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow">
+                                    <area class="map-icon-orange" shape="circle" coords="10,48,2" alt="loc orange" onclick="changeIdPoint('01', 'Produção')">
+                                    <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow" onclick="changeIdPoint('02', 'Refinamento')">
                                 </map>
                             </div>
 
@@ -189,8 +189,8 @@
                                             <label><h6>Id do Ponto</h6></label>
                                             <br>
                                             <section>
-                                                <input type="text" disabled value="0001" class="input-sen">
-                                                <input type="button" class="btn-edit" value="Edit">
+                                                <input type="text" disabled value="Selecione um pin no mapa" class="input-sen" id="point_id">
+                                                <input type="button" class="btn-edit" value="Editar" >
                                             </section>
                                             <br>
                                             <!--Input Id Ponto End-->
@@ -199,8 +199,8 @@
                                             <label><h6>Setor</h6></label>
                                             <br>
                                             <section>
-                                                <input type="text" disabled value="03">
-                                                <input type="button" class="btn-edit" value="Edit">
+                                                <input type="text" disabled value="Selecione o pin do setor" id="setor_id">
+                                                <input type="button" class="btn-edit" value="Editar">
                                             </section>
                                             <br>
                                             <!--Input Setor End-->
@@ -277,8 +277,8 @@
                                     <tbody>
                                         <tr>
                                             <th scope="row">001</th>
-                                            <td>Setor 03</td>
-                                            <td>Estável</td>
+                                            <td>Produção</td>
+                                            <td>Alerta</td>
                                             <td>
                                                 <a href="chart.html">Vizualizar dashboard</a>
                                             </td>
@@ -286,17 +286,8 @@
 
                                         <tr>
                                             <th scope="row">002</th>
-                                            <td>Setor 07</td>
-                                            <td>Estável</td>
-                                            <td>
-                                                <a href="chart.html">Vizualizar dashboard</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <th scope="row">003</th>
-                                            <td>Setor 04</td>
-                                            <td>Estável</td>
+                                            <td>Refinamento</td>
+                                            <td>Atenção</td>
                                             <td>
                                                 <a href="chart.html">Vizualizar dashboard</a>
                                             </td>

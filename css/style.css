@@ -330,7 +330,6 @@ div.div-pin-loc{
 /*POINTS NO MAPA*/
 .map-container {
     position: relative;
-    padding-bottom: 60%; /* define a altura do elemento como 60% da largura */
 }
 
 /*POINTS NO MAPA*/

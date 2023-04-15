@@ -334,6 +334,17 @@ $('form').submit(function() {
 });
 
 
+function changeIdPoint(par_id, par_setor){
+    doc_point = document.getElementById("point_id");
+    var_iniciais_setor = par_setor.substr(0, 4).toUpperCase();
+    
+    par_id = var_iniciais_setor + par_id;
+    console.log(par_id);
+    doc_point.value = par_id;
+    doc_setor = document.getElementById("setor_id");
+    doc_setor.value = par_setor;
+}
+
 //NAV BAR
 let prevScrollpos = window.pageYOffset;
 
