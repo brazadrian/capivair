@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        .map-container {
+            position: relative;
+        }
+
+        .map-icon-orange {
+            position: absolute;
+            top: 50px;
+            left: 116px;
+            width: 25px;
+            height: 25px;
+            background-image: url("../img/Mapa-Loc/pin-loc-orange.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .map-icon-yellow {
+            position: absolute;
+            top: 243px;
+            left: 145px;
+            width: 25px;
+            height: 25px;
+            background-image: url("../img/Mapa-Loc/pin-loc-yellow.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="map-container">
+        <img src="../img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap">
+        <map name="workmap">
+          <area class="map-icon-orange" shape="circle" coords="120,48,2" alt="loc orange">
+          <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow">
+        </map>
+    </div>
+
+    <div class="map-container">
+        <img id="map-image" src="../img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap">
+        <map name="workmap">
+            <area class="map-icon-orange" shape="circle" coords="120,48,2" alt="loc orange">
+        </map>
+    </div>
+
+
+</body>
+</html>

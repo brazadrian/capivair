@@ -76,7 +76,7 @@
     }
 
     fetchData().then(data => {
-        // Worldwide Sales Chart -> Total de Emissao
+        // Worldwide Sales Chart -> Emissao Total
         var ctx1 = $("#worldwide-sales").get(0).getContext("2d");
         var myChart1 = new Chart(ctx1, {
             type: "bar",
@@ -84,41 +84,41 @@
                 labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
                 datasets: [
                     {
-                        label: "AR",
+                        label: "CO₂",
                         data: [
-                            data.graficoColuna.AR.coluna1,
-                            data.graficoColuna.AR.coluna2,
-                            data.graficoColuna.AR.coluna3,
-                            data.graficoColuna.AR.coluna4,
-                            data.graficoColuna.AR.coluna5,
-                            data.graficoColuna.AR.coluna6,
-                            data.graficoColuna.AR.coluna7
+                            data.emissao_total.CO.coluna1,
+                            data.emissao_total.CO.coluna2,
+                            data.emissao_total.CO.coluna3,
+                            data.emissao_total.CO.coluna4,
+                            data.emissao_total.CO.coluna5,
+                            data.emissao_total.CO.coluna6,
+                            data.emissao_total.CO.coluna7
                         ],
                         backgroundColor: "#89CFF0" // primeira barra do grafico (multiple bar chart)
                     },
                     {
-                        label: "ÁGUA",
+                        label: "O₃",
                         data: [
-                            data.graficoColuna.AGUA.coluna1,
-                            data.graficoColuna.AGUA.coluna2,
-                            data.graficoColuna.AGUA.coluna3,
-                            data.graficoColuna.AGUA.coluna4,
-                            data.graficoColuna.AGUA.coluna5,
-                            data.graficoColuna.AGUA.coluna6,
-                            data.graficoColuna.AGUA.coluna7
+                            data.emissao_total.O.coluna1,
+                            data.emissao_total.O.coluna2,
+                            data.emissao_total.O.coluna3,
+                            data.emissao_total.O.coluna4,
+                            data.emissao_total.O.coluna5,
+                            data.emissao_total.O.coluna6,
+                            data.emissao_total.O.coluna7
                         ],
                         backgroundColor: "#0096FF" //segunda barra do grafico (multiple bar chart)
                     },
                     {
-                        label: "SOLO",
+                        label: "NO₂",
                         data: [
-                            data.graficoColuna.SOLO.coluna1,
-                            data.graficoColuna.SOLO.coluna2,
-                            data.graficoColuna.SOLO.coluna3,
-                            data.graficoColuna.SOLO.coluna4,
-                            data.graficoColuna.SOLO.coluna5,
-                            data.graficoColuna.SOLO.coluna6,
-                            data.graficoColuna.SOLO.coluna7
+                            data.emissao_total.NO.coluna1,
+                            data.emissao_total.NO.coluna2,
+                            data.emissao_total.NO.coluna3,
+                            data.emissao_total.NO.coluna4,
+                            data.emissao_total.NO.coluna5,
+                            data.emissao_total.NO.coluna6,
+                            data.emissao_total.NO.coluna7
                         ],
                         backgroundColor: "#0047AB" //terceira barra do grafico (multiple bar chart)
                     }
@@ -133,7 +133,7 @@
 //-- TELA -> index.html
 //-- GRAFICO LINHA #salve-chart
     fetchData().then(data => {
-        // Salse & Revenue Chart -> Media de Emissao
+        // Salse & Revenue Chart -> Emissao Semanal
         var ctx2 = $("#salse-revenue").get(0).getContext("2d");
         var myChart2 = new Chart(ctx2, {
             type: "line",
@@ -142,13 +142,13 @@
                 datasets: [{
                         label: "Setor A",
                         data: [
-                            data.graficoLinha.Setor_A.linha1,
-                            data.graficoLinha.Setor_A.linha2,
-                            data.graficoLinha.Setor_A.linha3,
-                            data.graficoLinha.Setor_A.linha4,
-                            data.graficoLinha.Setor_A.linha5,
-                            data.graficoLinha.Setor_A.linha6,
-                            data.graficoLinha.Setor_A.linha7
+                            data.emissao_semanal.Setor_A.linha1,
+                            data.emissao_semanal.Setor_A.linha2,
+                            data.emissao_semanal.Setor_A.linha3,
+                            data.emissao_semanal.Setor_A.linha4,
+                            data.emissao_semanal.Setor_A.linha5,
+                            data.emissao_semanal.Setor_A.linha6,
+                            data.emissao_semanal.Setor_A.linha7
                         ],
                         backgroundColor: "rgba(137, 207, 240, .5)", // linha setor a (Multiple line chart)
                         fill: true
@@ -156,13 +156,13 @@
                     {
                         label: "Setor B",
                         data: [
-                            data.graficoLinha.Setor_B.linha1,
-                            data.graficoLinha.Setor_B.linha2,
-                            data.graficoLinha.Setor_B.linha3,
-                            data.graficoLinha.Setor_B.linha4,
-                            data.graficoLinha.Setor_B.linha5,
-                            data.graficoLinha.Setor_B.linha6,
-                            data.graficoLinha.Setor_B.linha7
+                            data.emissao_semanal.Setor_B.linha1,
+                            data.emissao_semanal.Setor_B.linha2,
+                            data.emissao_semanal.Setor_B.linha3,
+                            data.emissao_semanal.Setor_B.linha4,
+                            data.emissao_semanal.Setor_B.linha5,
+                            data.emissao_semanal.Setor_B.linha6,
+                            data.emissao_semanal.Setor_B.linha7
                         ],
                         backgroundColor: "rgba(0, 150, 255, .5)", // linha setor b (Multiple line chart)
                         fill: true
@@ -170,13 +170,13 @@
                     {
                         label: "Setor C",
                         data: [
-                            data.graficoLinha.Setor_C.linha1,
-                            data.graficoLinha.Setor_C.linha2,
-                            data.graficoLinha.Setor_C.linha3,
-                            data.graficoLinha.Setor_C.linha4,
-                            data.graficoLinha.Setor_C.linha5,
-                            data.graficoLinha.Setor_C.linha6,
-                            data.graficoLinha.Setor_C.linha7
+                            data.emissao_semanal.Setor_C.linha1,
+                            data.emissao_semanal.Setor_C.linha2,
+                            data.emissao_semanal.Setor_C.linha3,
+                            data.emissao_semanal.Setor_C.linha4,
+                            data.emissao_semanal.Setor_C.linha5,
+                            data.emissao_semanal.Setor_C.linha6,
+                            data.emissao_semanal.Setor_C.linha7
                         ],
                         backgroundColor: "rgba(0, 71, 171, .9)", // linha setor c (Multiple line chart)
                         fill: true
@@ -202,17 +202,17 @@
                 datasets: [{
                     label: "Hora",
                     data: [
-                            data.graficoProducaoPorHoras.noveHoras,
-                            data.graficoProducaoPorHoras.dezHoras,
-                            data.graficoProducaoPorHoras.onzeHoras,
-                            data.graficoProducaoPorHoras.dozeHoras,
-                            data.graficoProducaoPorHoras.trezeHoras,
-                            data.graficoProducaoPorHoras.quatorzeHoras,
-                            data.graficoProducaoPorHoras.quinzeHoras,
-                            data.graficoProducaoPorHoras.dezesseisHoras,
-                            data.graficoProducaoPorHoras.dezesseteHoras,
-                            data.graficoProducaoPorHoras.dezoitoHoras,
-                            data.graficoProducaoPorHoras.dezenoveHoras,
+                            data.emissao_diaria.noveHoras,
+                            data.emissao_diaria.dezHoras,
+                            data.emissao_diaria.onzeHoras,
+                            data.emissao_diaria.dozeHoras,
+                            data.emissao_diaria.trezeHoras,
+                            data.emissao_diaria.quatorzeHoras,
+                            data.emissao_diaria.quinzeHoras,
+                            data.emissao_diaria.dezesseisHoras,
+                            data.emissao_diaria.dezesseteHoras,
+                            data.emissao_diaria.dezoitoHoras,
+                            data.emissao_diaria.dezenoveHoras,
                         ],
                     fill: false,
                     backgroundColor: "rgba(137, 207, 240)" // cor dos pontos (single line chart)
@@ -229,47 +229,37 @@
 //-- TELA -> chart.html
 //-- Grafico em colunas separadas
     // Single Bar Chart
-    var ctx4 = $("#bar-chart").get(0).getContext("2d");
-    var myChart4 = new Chart(ctx4, {
-        type: "bar",
-        data: {
-            labels: ["A0101", "B0201", "C0301", "D0401", "E0501"],
-            datasets: [
-                {
-                    label: "Sensor A",
-                    fill: false,
-                    backgroundColor: [
-                        "rgba(0, 71, 171, .9)", // cor das barras (single bar chart)
-                        "rgba(0, 150, 255, .9)",
-                        "rgba(0, 150, 255, .5)",
-                        "rgba(137, 207, 240, .9)",
-                        "rgba(137, 207, 240, .4)"
-                    ],
-                    data: [
-                        55,
-                        49, 
-                        44, 
-                        24, 
-                        15]
-                }],
-/* Valores Padrao
-                datasets: [{
-                label: "Sensor",
-                fill: false,
-                backgroundColor: [
-                    "rgba(0, 71, 171, .9)", // cor das barras (single bar chart)
-                    "rgba(0, 150, 255, .9)",
-                    "rgba(0, 150, 255, .5)",
-                    "rgba(137, 207, 240, .9)",
-                    "rgba(137, 207, 240, .4)"
+    fetchData().then(data => {
+        var ctx4 = $("#bar-chart").get(0).getContext("2d");
+        var myChart4 = new Chart(ctx4, {
+            type: "bar",
+            data: {
+                labels: ["A0101", "B0201", "C0301", "D0401", "E0501"],
+                datasets: [
+                    {
+                        label: "Sensor A",
+                        fill: false,
+                        backgroundColor: [
+                            "rgba(0, 71, 171, .9)", // cor das barras (single bar chart)
+                            "rgba(0, 150, 255, .9)",
+                            "rgba(0, 150, 255, .5)",
+                            "rgba(137, 207, 255, .9)",
+                            "rgba(137, 207, 255, .7)"
+                        ],
+                        data: [
+                            data.emissao_sensores.A0101,
+                            data.emissao_sensores.B0201, 
+                            data.emissao_sensores.C0301, 
+                            data.emissao_sensores.D0401, 
+                            data.emissao_sensores.E0501
+                        ]
+                    }
                 ],
-                data: [55, 49, 44, 24, 15]
-                }]
-*/
-        },
-        options: {
-            responsive: true
-        }
+            },
+            options: {
+                responsive: true
+            }
+        });
     });
 
 //--Aqui também tem um Grafico na tela. É o Grafico em Colunas da tela index.html
@@ -277,25 +267,32 @@
 //-- TELA -> chart.html
 //-- Grafico em Pizza
     // Pie Chart - Poluentes
-    var ctx5 = $("#pie-chart").get(0).getContext("2d");
-    var myChart5 = new Chart(ctx5, {
-        type: "pie",
-        data: {
-            labels: ["Monóxido de Carbono", "Dióxido de Carbono","Dióxido de Nitrogênio", "Ozônio"],
-            datasets: [{
-                backgroundColor: [
-                    "rgba(0, 71, 171, .9)",  // cor das fatias (pie chart)
-                    "rgba(0, 150, 255, .9)",
-                    "rgba(0, 150, 255, .5)",
-                    "rgba(137, 207, 240, .9)",
-                    "rgba(137, 207, 240, .4)"
-                ],
-                data: [55, 49, 44, 24]
-            }]
-        },
-        options: {
-            responsive: true
-        }
+    fetchData().then(data => {
+        var ctx5 = $("#pie-chart").get(0).getContext("2d");
+        var myChart5 = new Chart(ctx5, {
+            type: "pie",
+            data: {
+                labels: ["Monóxido de Carbono", "Dióxido de Carbono","Dióxido de Nitrogênio", "Ozônio"],
+                datasets: [{
+                    backgroundColor: [
+                        "rgba(0, 71, 171, .9)",  // cor das fatias (pie chart)
+                        "rgba(0, 150, 255, .9)",
+                        "rgba(0, 150, 255, .5)",
+                        "rgba(137, 207, 240, .9)",
+                        "rgba(137, 207, 240, .4)"
+                    ],
+                    data: [
+                        data.poluentes.monoxidoCarbono,
+                        data.poluentes.dioxidoCarbono,
+                        data.poluentes.dioxidoNitrogenio,
+                        data.poluentes.ozonio
+                    ]
+                }]
+            },
+            options: {
+                responsive: true
+            }
+        });
     });
 
 //-- TELA -> chart.html
@@ -324,3 +321,71 @@
 
 
 })(jQuery);
+
+var warning = true;
+window.onbeforeunload = function() { 
+  if (warning) {
+    return "Você fez mudanças nesta página que ainda não confirmou. Se você navegar para longe desta página, perderá suas alterações não salvas.";
+  }
+}
+
+$('form').submit(function() {
+   window.onbeforeunload = null;
+});
+
+
+//NAV BAR
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").classList.remove("hidden");
+  } else {
+    document.querySelector(".navbar").classList.add("hidden");
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+//PONTO LOC
+// Seleciona as áreas do mapa que contêm os pontos de interesse
+var areas = document.querySelectorAll('map[name="workmap"] area');
+
+// Seleciona a imagem do mapa
+var mapa = document.querySelector('.map-container img');
+
+// Função que atualiza a posição dos pontos na tela
+function atualizaPosicaoPontos() {
+  // Percorre cada área do mapa
+  areas.forEach(function(area) {
+    // Obtém as coordenadas da área
+    var coords = area.getAttribute('coords').split(',');
+
+    // Converte as coordenadas para valores numéricos
+    var x = parseInt(coords[0]);
+    var y = parseInt(coords[1]);
+
+    // Obtém a largura e a altura da imagem do mapa
+    var mapaWidth = mapa.offsetWidth;
+    var mapaHeight = mapa.offsetHeight;
+
+    // Calcula a posição dos pontos em relação à imagem
+    var posicaoX = Math.round((x / 100) * mapaWidth);
+    var posicaoY = Math.round((y / 100) * mapaHeight);
+
+    // Seleciona o ponto correspondente à área atual
+    var ponto = document.querySelector(area.getAttribute('alt'));
+
+    // Define a posição do ponto na tela
+    ponto.style.left = posicaoX + 'px';
+    ponto.style.top = posicaoY + 'px';
+  });
+}
+
+// Chama a função de atualização de posição dos pontos quando a página é carregada
+window.addEventListener('load', atualizaPosicaoPontos);
+
+// Chama a função de atualização de posição dos pontos quando a janela é redimensionada
+window.addEventListener('resize', atualizaPosicaoPontos);
+

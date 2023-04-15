@@ -1,38 +1,44 @@
-
 {
-    "graficoColuna": {
-        "AR": {
-            "coluna1": 15,
-            "coluna2": 20,
-            "coluna3": 25,
-            "coluna4": 27,
-            "coluna5": 30,
-            "coluna6": 35,
-            "coluna7": 40
+
+    "poluicao_diaria" : 6,
+    "poluicao_semanal" : 130,
+    "poluicao_mensal" : 160,
+    "poluicao_total" : 5000,
+
+
+    "emissao_total" : {
+        "CO" : {
+            "coluna1" : 15,
+            "coluna2" : 20,
+            "coluna3" : 25,
+            "coluna4" : 27,
+            "coluna5" : 30,
+            "coluna6" : 35,
+            "coluna7" : 40
         },
-        "AGUA": {
-            "coluna1": 25,
-            "coluna2": 30,
-            "coluna3": 35,
-            "coluna4": 37,
-            "coluna5": 40,
-            "coluna6": 45,
-            "coluna7": 50
+        "O" : {
+            "coluna1" : 25,
+            "coluna2" : 30,
+            "coluna3" : 35,
+            "coluna4" : 37,
+            "coluna5" : 40,
+            "coluna6" : 45,
+            "coluna7" : 50
         },
-        "SOLO": {
-            "coluna1": 35,
-            "coluna2": 40,
-            "coluna3": 45,
-            "coluna4": 47,
-            "coluna5": 50,
-            "coluna6": 55,
-            "coluna7": 58
+        "NO" : {
+            "coluna1" : 35,
+            "coluna2" : 40,
+            "coluna3" : 45,
+            "coluna4" : 47,
+            "coluna5" : 50,
+            "coluna6" : 55,
+            "coluna7" : 58
         }
     },
 
 
-    "graficoLinha": {
-        "Setor_A": {
+    "emissao_semanal" : {
+        "Setor_A" : {
             "linha1" : 15,
             "linha2" : 30,
             "linha3" : 55,
@@ -41,7 +47,7 @@
             "linha6" : 65,
             "linha7" : 85
         },
-        "Setor_B": {
+        "Setor_B" : {
             "linha1" : 99,
             "linha2" : 135,
             "linha3" : 170,
@@ -50,7 +56,7 @@
             "linha6" : 180,
             "linha7" : 270
         },
-        "Setor_C": {
+        "Setor_C" : {
             "linha1" : 150,
             "linha2" : 200,
             "linha3" : 250,
@@ -60,28 +66,38 @@
             "linha7" : 280
         }
     },
-    
 
-    "graficoProducaoPorHoras": {
 
-        "noveHoras": 7,
-        "dezHoras": 8,
-        "onzeHoras": 8,
-        "dozeHoras": 9,
-        "trezeHoras": 10,
-        "quatorzeHoras": 10.4,
-        "quinzeHoras": 11.5,
-        "dezesseisHoras": 12,
-        "dezesseteHoras": 10.7,
-        "dezoitoHoras": 9.4,
-        "dezenoveHoras": 9
+    "emissao_diaria" : {
+        "noveHoras" : 7,
+        "dezHoras" : 8,
+        "onzeHoras" : 8,
+        "dozeHoras" : 9,
+        "trezeHoras" : 10,
+        "quatorzeHoras" : 10.4,
+        "quinzeHoras" : 11.5,
+        "dezesseisHoras" : 12,
+        "dezesseteHoras" : 10.7,
+        "dezoitoHoras" : 9.4,
+        "dezenoveHoras" : 9
     },
 
 
+    "emissao_sensores" : {
+        "A0101" : 55,
+        "B0201" : 49,
+        "C0301" : 44,
+        "D0401" : 24,
+        "E0501" : 15
+    },
 
-    "totalEmissoe" : 5000,
-    "emissaoDiaria" : 130,
-    "mediaEmissao": 160,
-    "todosPoluentes": 6
+
+    "poluentes" : {
+        "monoxidoCarbono" : 55,
+        "dioxidoCarbono" : 49,
+        "dioxidoNitrogenio" : 44,
+        "ozonio" : 24
+    }
+
 
 }
