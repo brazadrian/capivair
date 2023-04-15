@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -31,6 +31,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .map-container {
+            position: relative;
+        }
+
+        .map-icon-orange {
+            position: absolute;
+            top: 47px;
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            background-image: url("img/Mapa-Loc/pin-loc-orange.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .map-icon-yellow {
+            position: absolute;
+            top: 243px;
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            background-image: url("img/Mapa-Loc/pin-loc-yellow.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,9 +79,13 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
+                <!--Icon Lado Esquerdo Logo Start-->
                 <a href="index.html" class="navbar-brand mx-4 mb-3">
-                    <h3 class="text-primary"><!-- <i class="fa fa-user-edit me-2"></i> -->CapivAir</h3>
+                    <h3 class="text-primary"><img src="img/logo_capivara2.png" alt="Capivara graficamente desenhada em azul" height="34.38"> Capivair</h3>
                 </a>
+                <!--Icon Lado Esquerdo Logo End-->
+                
+                <!-- Icon User - David Loo (Administrador) -->
                 <div class="d-flex align-items-center ms-4 mb-4">
                     <div class="position-relative">
                         <img class="rounded-circle" src="img/40.png" alt="" style="width: 40px; height: 40px;">
@@ -58,7 +93,7 @@
                     </div>
                     <div class="ms-3">
                         <h6 class="mb-0">David Loo</h6>
-                        <span>Admin</span>
+                        <span>Administrador</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
@@ -74,22 +109,26 @@
         <!-- Content Start -->
         <div id="contenttable"class="content">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
-                <a href="index.html" class="navbar-brand d-flex d-lg-none me-4">
-                    <h2 class="text-primary mb-0"><!--<i class="fa fa-user-edit">--></i></h2>
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0 hidden">
+                <!--Icon Lado Esquerdo Logo Start-->
+                <a href="index.html" class="navbar-brand d-flex d-lg-none ">
+                    <img src="img/logo_capivara2.png" alt="Capivara graficamente desenhada em azul" height="34.38">
                 </a>
+                
+                <!--Icon Lado Esquerdo Logo End-->
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                
+
                 <div class="navbar-nav align-items-center ms-auto">
                    
+                    <!--Icon User Lado Direito Start-->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <p href="#" class="nav-link" data-bs-toggle="dropdown"><!--dropdown-toggle-->
                             <img class="rounded-circle me-lg-2" src="img/40.png" alt="" style="width: 40px; height: 40px;">
-                        </a>
-                        
+                        </p>
                     </div>
+                    <!--Icon User Lado Direito End-->
 
                 </div>
             </nav>
@@ -102,19 +141,41 @@
             <div id="test" class="container-fluid pt-4 px-4">
                 <div class="row g-4">
 
-                   <!--Coluna Imagem-->
-                    <div class="col-sm-12 col-xl-8">
-                        <div  class=" map bg-secondary rounded h-90 p-4"><!--alterado o h era h-100-->
-                            <h6 class="mb-4">Setor 3</h6>
-
-                            <div class="set3">
-                                <img class="map-planta" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="">
+                   <!--Coluna Imagem Start-->
+                   <div class="col-sm-12 col-xl-8">
+                    <!--Campo da Imagem Start-->
+                    <div class="map bg-secondary rounded h-90 p-4">
+                        <h6 class="mb-4">Setor 3</h6>
+                
+                        <!--Imagem Start-->
+                        <div class="set3">
+                            
+                            <div class="map-container">
+                                <img id="map-image" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap">
+                                <map name="workmap">
+                                    <area class="map-icon-orange" shape="circle" coords="10,48,2" alt="loc orange">
+                                    <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow">
+                                </map>
                             </div>
 
                         </div>
+                        <!--Imagem End-->
+                
                     </div>
+                    <!--Campo da Imagem End-->
+                </div>
+                   <!--Coluna Imagem End-->
 
-                   <!--Coluna Campos-->
+
+<!--Teste Botoes Mapa Start-->
+
+
+
+<!--Teste Botoes Mapa End-->
+
+
+
+                    <!--Coluna Campos Start-->
                     <div class="col-sm-12 col-xl-4">
                         <div  class=" map bg-secondary rounded h-90 p-4">
 
@@ -124,6 +185,7 @@
                                     <div class="row">
                                         <div class="col-12 col-sm-6 text-sm-start">
                                             
+                                            <!--Input Id Ponto Start-->
                                             <label><h6>Id do Ponto</h6></label>
                                             <br>
                                             <section>
@@ -131,6 +193,9 @@
                                                 <input type="button" class="btn-edit" value="Edit">
                                             </section>
                                             <br>
+                                            <!--Input Id Ponto End-->
+
+                                            <!--Input Setor Start-->
                                             <label><h6>Setor</h6></label>
                                             <br>
                                             <section>
@@ -138,6 +203,9 @@
                                                 <input type="button" class="btn-edit" value="Edit">
                                             </section>
                                             <br>
+                                            <!--Input Setor End-->
+
+                                            <!--Status Sensor Start-->
                                             <label><h6>Status Sensor</h6></label>
                                             <br>
                                             <section>
@@ -146,39 +214,29 @@
                                                 </button>
                                             </section>
                                             <br>
+                                            <!--Status Sensor End-->
                         
-<!--Icone Lixeira-->
+                                            <!--Icone Lixeira Vermelha Start-->
                                             <section class="rmvv pt-4">
                                                 <img class="text-sm-start" id="rmv" src="img/lixeira.png" alt="Remover">
                                                 <h6 class="text-sm-start pt-2">Remover</h6>
                                             </section>
+                                            <!--Icone Lixeira Vermelha End-->
 
                                         </div>
                                     </div>
 
                                 </div>
                             </div>
-
-<!--
-                             <div class="container-fluid pt-4 px-4">
-                                <div class="bg-secondary rounded-top p-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-6 text-sm-start">
-                                            
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
- -->
 
                         </div>
                     </div>
+                    <!--Coluna Campos End-->
 
-<!--Icones Pontos-->
+                    <!--Campo Informacao Start-->
                     <div class="col-12">
                         <div class="bg-secondary rounded h-100 w-100 p-4">
-
+                            <!--Icones Ponto Localizacao Start-->
                             <div class="div-pin-loc">
                                 <label>
                                     <img src="img/Mapa-Loc/pin-loc-blue.png" alt="">
@@ -200,9 +258,10 @@
                                     <th>Urgente</th>
                                 </label>
                             </div>
+                            <!--Icones Ponto Localizacao End-->
 
-<!--Registro dos Setores-->
                             <h6 class="mb-4">Ponto de Coleta dos Dados</h6>
+                            <!--Registro Sensores Start-->
                             <div class="table-responsive">
                                 <table class="table">
 
@@ -246,9 +305,11 @@
 
                                 </table>
                             </div>
+                            <!--Registro Sensores End-->
 
                         </div>
                     </div>
+                    <!--Campo Informacao End-->
 
                 </div>
             </div>
@@ -260,11 +321,11 @@
                 <div class="bg-secondary rounded-top p-4">
                     <div class="row">
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Capivair</a>, All Right Reserved. 
+                            &copy; <a href="#">Capivair</a>, Todos os Direitos Reservados. 
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            Designed By <a href="">Capivair</a>
-                            <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">github.com</a>
+                            Projetado por <a href="">Capivair</a>
+                            <br>Github: <a href="https://github.com/brazadrian/capivair" target="_blank">Template</a>
                         </div>
                     </div>
                 </div>
