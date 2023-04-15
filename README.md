@@ -1,18 +1,29 @@
 # Capivair
 O projeto é um aplicativo de monitoramento de poluição ambiental desenvolvido por estudantes da Faculdade SENAC/PE no terceiro período. O objetivo do aplicativo é exibir dados advindos de sensores instalados em instalações industriais para tomada de decisões em favor do meio ambiente.
+<hr>
+<h3>Problema:</h3>
+Segundo a <strong>Organização Mundial da Saúde, cerca de 8 milhões de pessoas morrem por ano no mundo devido à poluição do ar ambiental.</strong>
 
-# Problema
+Dados da <strong>Global Carbon Project</strong> mostram que apenas no ano de 2018, foram despejados na atmosfera <strong>37 bilhões de toneladas de gás carbônico (CO2)</strong>, e que a queima de óleos, gases e combustíveis feita pelas <strong>fábricas e indústrias</strong> são as maiores responsáveis por este número.
 
-# Solução
+Essa poluição atmosférica além de trazer grandes danos à saúde, também produz efeitos negativos ao ecossistema, podendo contribuir com a poluição das águas e do solo.
 
-# Tecnologias utilizadas
-- GitHub
-- Notion
-- ClickUp
-- VS Code
-- Miro
-
-# Colaboradores
+<hr>
+<h3>Solução:</h3>
+Plataforma para gerenciamento da emissão poluição atmosféricos conectado com sensores, realizando relatórios e análises preditivas economia de recursos, prevenção de multas, alertas de emissão e quebra de equipamento.
+<hr>
+<h3>Objetivos:</h3>
+Auxiliar autoridades, empresas e cidadãos, promovendo a proteção e cuidado com o meio ambiente e saúde pública.
+<hr>
+<h3>Tecnologias utilizadas</h3>
+<Lu>
+<li>GitHub</li>
+<li>Notion</li>
+<li>ClickUp</li>
+<li>VS Code</li>
+<li> Miro</li>
+</lu>
+<h2 >Colaboradores</h2>
 <table>
   <tr>
     <td align="center"><a href="https://github.com/AyrtonMaia0"><img src="https://avatars.githubusercontent.com/u/98968093?v=4" width="100px;" alt="adicionemDescricao"/><br /><sub><b>Ayrton Maia</b></sub></a></td>
