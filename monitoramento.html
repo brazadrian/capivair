@@ -31,6 +31,37 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .map-container {
+            position: relative;
+        }
+
+        .map-icon-orange {
+            position: absolute;
+            top: 47px;
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            background-image: url("img/Mapa-Loc/pin-loc-orange.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .map-icon-yellow {
+            position: absolute;
+            top: 243px;
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            background-image: url("img/Mapa-Loc/pin-loc-yellow.png");
+            background-size: cover;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -78,7 +109,7 @@
         <!-- Content Start -->
         <div id="contenttable"class="content">
             <!-- Navbar Start -->
-            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0 hidden">
                 <!--Icon Lado Esquerdo Logo Start-->
                 <a href="index.html" class="navbar-brand d-flex d-lg-none ">
                     <img src="img/logo_capivara2.png" alt="Capivara graficamente desenhada em azul" height="34.38">
@@ -93,7 +124,7 @@
                    
                     <!--Icon User Lado Direito Start-->
                     <div class="nav-item dropdown">
-                        <p href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <p href="#" class="nav-link" data-bs-toggle="dropdown"><!--dropdown-toggle-->
                             <img class="rounded-circle me-lg-2" src="img/40.png" alt="" style="width: 40px; height: 40px;">
                             <!-- <span class="d-none d-lg-inline-flex">David Loo</span> -->
                         </p>
@@ -119,33 +150,28 @@
                 <div class="row g-4">
 
                    <!--Coluna Imagem Start-->
-                    <div class="col-sm-12 col-xl-8">
-                        
-                       <!--Campo da Imagem Start-->
-                        <div  class=" map bg-secondary rounded h-90 p-4"><!--alterado o h era h-100-->
-                            <h6 class="mb-4">Setor 3</h6>
-
-                           <!--Imagem Start-->
-                            <div class="set3">
-                                <div class="item">
-                                    <div class="item-inner">
-                                      <a href="#" class="sonar"></a>
-                                    </div>
-                                </div>
-
-                                <div class="map-container">
-                                    <img src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap">
-                                    <map name="workmap">
-                                      <area class="map-icon-orange" shape="circle" coords="120,48,2" alt="loc orange">
-                                      <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow">
-                                    </map>
-                                </div>
+                   <div class="col-sm-12 col-xl-8">
+                    <!--Campo da Imagem Start-->
+                    <div class="map bg-secondary rounded h-90 p-4">
+                        <h6 class="mb-4">Setor 3</h6>
+                
+                        <!--Imagem Start-->
+                        <div class="set3">
+                            
+                            <div class="map-container">
+                                <img id="map-image" src="img/Mapa-Loc/Map-Planta-0.5x.png" alt="" usemap="#workmap">
+                                <map name="workmap">
+                                    <area class="map-icon-orange" shape="circle" coords="10,48,2" alt="loc orange">
+                                    <area class="map-icon-yellow" shape="circle" coords="120,48,2" alt="loc yellow">
+                                </map>
                             </div>
-                           <!--Imagem End-->
 
                         </div>
-                       <!--Campo da Imagem End-->
+                        <!--Imagem End-->
+                
                     </div>
+                    <!--Campo da Imagem End-->
+                </div>
                    <!--Coluna Imagem End-->
 
 
@@ -211,17 +237,6 @@
                                 </div>
                             </div>
 
-<!--
-                             <div class="container-fluid pt-4 px-4">
-                                <div class="bg-secondary rounded-top p-4">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-6 text-sm-start"> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
--->
-
                         </div>
                     </div>
                     <!--Coluna Campos End-->
@@ -254,7 +269,7 @@
                             <!--Icones Ponto Localizacao End-->
 
                             <h6 class="mb-4">Ponto de Coleta dos Dados</h6>
-                           <!--Registro Sensores Start-->
+                            <!--Registro Sensores Start-->
                             <div class="table-responsive">
                                 <table class="table">
 
@@ -298,7 +313,7 @@
 
                                 </table>
                             </div>
-                           <!--Registro Sensores End-->
+                            <!--Registro Sensores End-->
 
                         </div>
                     </div>

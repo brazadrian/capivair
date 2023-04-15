@@ -330,31 +330,32 @@ div.div-pin-loc{
 /*POINTS NO MAPA*/
 .map-container {
     position: relative;
+    padding-bottom: 60%; /* define a altura do elemento como 60% da largura */
 }
 
-.map-icon-orange {  /*PONTO LARANJA*/
+/*POINTS NO MAPA*/
+.map-container {
+    position: relative;
+}
+
+.map-icon {
     position: absolute;
-    top: 48px;
-    left: 300px;
     width: 25px;
     height: 25px;
-    background-image: url("../img/Mapa-Loc/pin-loc-orange.png");
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
 }
 
-.map-icon-yellow { /*PONTO AMARELO*/
-    position: absolute;
-    top: 240px;
-    left: 328px;
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/Mapa-Loc/pin-loc-yellow.png");
-    background-size: cover;
-    border-radius: 50%;
-    cursor: pointer;
+/*NAV BAR*/
+.navbar {
+    transition: top 0.3s;
 }
+
+.navbar.hidden {
+    top: -100px;
+}
+
 
 /*AYRTON End*/
 

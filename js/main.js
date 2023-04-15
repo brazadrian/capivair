@@ -321,3 +321,61 @@
 
 
 })(jQuery);
+
+
+
+//NAV BAR
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").classList.remove("hidden");
+  } else {
+    document.querySelector(".navbar").classList.add("hidden");
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+//PONTO LOC
+// Seleciona as áreas do mapa que contêm os pontos de interesse
+var areas = document.querySelectorAll('map[name="workmap"] area');
+
+// Seleciona a imagem do mapa
+var mapa = document.querySelector('.map-container img');
+
+// Função que atualiza a posição dos pontos na tela
+function atualizaPosicaoPontos() {
+  // Percorre cada área do mapa
+  areas.forEach(function(area) {
+    // Obtém as coordenadas da área
+    var coords = area.getAttribute('coords').split(',');
+
+    // Converte as coordenadas para valores numéricos
+    var x = parseInt(coords[0]);
+    var y = parseInt(coords[1]);
+
+    // Obtém a largura e a altura da imagem do mapa
+    var mapaWidth = mapa.offsetWidth;
+    var mapaHeight = mapa.offsetHeight;
+
+    // Calcula a posição dos pontos em relação à imagem
+    var posicaoX = Math.round((x / 100) * mapaWidth);
+    var posicaoY = Math.round((y / 100) * mapaHeight);
+
+    // Seleciona o ponto correspondente à área atual
+    var ponto = document.querySelector(area.getAttribute('alt'));
+
+    // Define a posição do ponto na tela
+    ponto.style.left = posicaoX + 'px';
+    ponto.style.top = posicaoY + 'px';
+  });
+}
+
+// Chama a função de atualização de posição dos pontos quando a página é carregada
+window.addEventListener('load', atualizaPosicaoPontos);
+
+// Chama a função de atualização de posição dos pontos quando a janela é redimensionada
+window.addEventListener('resize', atualizaPosicaoPontos);
+
