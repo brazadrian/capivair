@@ -47,7 +47,7 @@ self.addEventListener('install', event => {
         './img/AppIcons/167.png',
         './img/AppIcons/172.png',
         './img/AppIcons/180.png',
-        './img/AppIcons/ic_launcher.png',
+        /* './img/AppIcons/ic_launcher.png', */
         './img/AppIcons/196.png',
         './img/AppIcons/216.png',
         './img/AppIcons/256.png',
