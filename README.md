@@ -1,6 +1,11 @@
-# Capivair
-O projeto é um aplicativo de monitoramento de poluição ambiental desenvolvido por estudantes da Faculdade SENAC/PE no terceiro período. O objetivo do aplicativo é exibir dados advindos de sensores instalados em instalações industriais para tomada de decisões em favor do meio ambiente.
-<hr>
+<p align="center">
+  <a href="https://capivair.netlify.app/">
+    <img alt="Capivair" src="https://raw.githubusercontent.com/brazadrian/gatsby-app/master/src/images/capivair-icon-sf.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Capivair
+</h1>
 <h3>Problema:</h3>
 Segundo a <strong>Organização Mundial da Saúde, cerca de 8 milhões de pessoas morrem por ano no mundo devido à poluição do ar ambiental.</strong>
 
